@@ -1,27 +1,13 @@
+#Robertas Dereskevicius 2021 Kheiron Take-home Exercise
+#The logic for a basic prefix calculator
+
 from collections import deque
-
-def multiplication(_left, _right):
-    return _left * _right
-    
-def division(_left, _right):
-    return _left / _right
-    
-def addition(_left, _right):
-    return _left + _right
-    
-def subtraction(_left, _right):
-    return _left - _right
-
-def get_op(x):
-    return {
-        '*': multiplication,
-        '/': division,
-        '+': addition,
-        '-': subtraction,   
-    }.get(x, x)
+from Helper import get_op
     
 def compute(data):
+    #Using deque to pop the leftmost value from the input
     cur_op = get_op(data.popleft())
+    #Callable can be used to check if the object is a function
     if callable(cur_op):
         return cur_op(compute(data), compute(data))
     else:
