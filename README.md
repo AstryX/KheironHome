@@ -4,14 +4,19 @@ A take-home exercise for Kheiron Medical ML job
 Completed all Part1, Part2 and Bonus exercises. 
 
 Requirements:
+
 Python 3.7.9
+
 collections (built-in)
+
 flask (pip install flask)
 
 Make sure that all of the input to all three applications is space separated for each element! F.e. ( 1 + 5 ) + ( 2 * ( 3 + 1 ) )
+
 Edge cases (like division by zero, etc) are not handled as suggested by the task.
 
 ## Part One
+
 python Part1.py 
 
 Give space-separated prefix input.
@@ -35,6 +40,7 @@ Give space-separated prefix input.
 ```
 
 ## Part Two
+
 python Part2.py 
 
 Give space-separated infix input.
@@ -53,8 +59,11 @@ Give space-separated infix input.
 
 ## Part Three
 pip install flask
+
 python Bonus.py 
+
 Open browser and navigate to http://localhost:5000/
+
 Give same prefix input as in Part 1.
 
 
